@@ -7,6 +7,8 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #97BC62;
+	color: #2C5F2D;
 }
 
 #root {
@@ -16,6 +18,7 @@ body {
 
 h2 {
 	margin: 1em 0;
+	letter-spacing: 0.05em;
 }
 
 h3 {
@@ -24,4 +27,9 @@ h3 {
 
 ol {
 	margin-left: 2em;
+}
+
+h2::first-letter,
+h3::first-letter {
+  text-transform: capitalize;
 }

@@ -251,11 +251,12 @@ window.addEventListener("load", _load);`
 			]
 		}
 	];
+	
 
 	const root = document.getElementById("root");
 	
 	book.forEach( chapter => {
-		
+
 		const page = document.createElement(chapter.page.tag);
 		page.insertAdjacentText("beforeend", chapter.page.content);
 		
@@ -290,35 +291,10 @@ window.addEventListener("load", _load);`
 
 	});
 
-/* 	
-
-	for (const note of notes) {
-		const e = document.createElement(note.tag);
-		e.insertAdjacentHTML("beforeend", e.content);
-		root.insertAdjacentElement("beforeend", e);
-	} */
-
-
-	// TODO: hétfőig kiírni, highlight js 
-/* 
-	https://highlightjs.org/download/
-<link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-
-https://highlightjs.org/usage/</link> */
-
-/* document.addEventListener('DOMContentLoaded', (event) => {
-  document.querySelectorAll('pre code').forEach((block) => {
+	
+	document.querySelectorAll('pre code').forEach((block) => {
     hljs.highlightBlock(block);
   });
-}); */
-
-/* pageload végére
-document.querySelectorAll('pre code').forEach((block) => {
-    hljs.highlightBlock(block);
-  }); */
-
 }
 
 window.addEventListener("load", _load);
